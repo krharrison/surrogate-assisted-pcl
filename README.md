@@ -1,2 +1,6 @@
-# surrogate-assisted-pcl
-Surrogate-Assisted Analysis of the Parameter Configuration Landscape
+# Surrogate-Assisted Parameter Configuration Landscapes
+
+This repository provides the training process for Surrogate-Assisted Parameter Configuration Landscapes (PCLs). The PCL offers insight into the characteristics associated with optimisation of the parameter configuration of a meta-heuristic. However, determining the characteristics of the PCL is an extremely computationally expensive process. This repository provides a training process for surrogate models, using Artifical Neural Networks (ANNs), to greatly reduce the computational burden associated with characterising the PCL. Particularly, the surrogate models can provide an approximate evaluation of a candidate parameterisation for a meta-heuristic optimiser in a fraction of the time needed for a full evaluation. The surrogate training process is demonstrated using two popular meta-heurstics, namely Differential Evolution (DE) and Particle Swarm Optimisation (PSO), with 2 and 3 parameters, respectively.
+
+To run the training process, simply execute the sobolPCL.m script in the DE-PCL (for DE) or PSO-PCL (for PSO) folder. Also included in this repository are sample data files for a 30-dimensional problem using a population size of 30, located in the respective SobolSamples\30D\30 subfolders, for both DE and PSO.
+
